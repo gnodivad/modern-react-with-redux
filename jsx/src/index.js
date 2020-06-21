@@ -6,7 +6,7 @@ const App = () => {
         <div>
             <label for="name" class="label">Enter name:</label>
             <input type="text" id="name" />
-            <button style="background-color: blue; color: white;"></button>
+            <button style={{ backgroundColor: 'blue', color: 'white' }}>Submit</button>
         </div>
     );
 };
