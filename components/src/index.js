@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDom from "react-dom";
-import CommentDetail from "./CommentDetail";
 import faker from "faker";
+import ApprovalCard from "./ApprovalCard";
+import CommentDetail from "./CommentDetail";
 
 const App = () => {
   return (
     <div className="ui container comments">
+      <ApprovalCard />
       <CommentDetail
         author="Sam"
         timeAgo="Today at 4:45PM"
