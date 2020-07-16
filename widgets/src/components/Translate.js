@@ -11,8 +11,12 @@ const options = [
     value: "ar",
   },
   {
-    label: "Hindi",
-    value: "hi",
+    label: "Chinese (Simplified)",
+    value: "zh",
+  },
+  {
+    label: "English",
+    value: "en",
   },
 ];
 
