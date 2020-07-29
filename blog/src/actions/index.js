@@ -1,7 +1,11 @@
+import { map, memoize, uniq } from "lodash";
 import jsonPlaceholder from "../apis/jsonPlaceholder";
 
-export const fetchPostsAndUsers = () => async (dispatch) => {
+export const fetchPostsAndUsers = () => async (dispatch, getState) => {
   await dispatch(fetchPosts());
+
+  const userIds = uniq(map(getState().posts, "userId"));
+  userIds.forEach((id) => dispatch(fetchUser(id)));
 };
 
 export const fetchPosts = () => async (dispatch) => {
