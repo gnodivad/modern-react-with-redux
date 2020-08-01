@@ -10,8 +10,8 @@ import Header from "./Header";
 function App() {
   return (
     <div>
-      <Header />
       <BrowserRouter>
+        <Header />
         <Route path="/" exact component={StreamList} />
         <Route path="/streams/new" component={StreamCreate} />
         <Route path="/streams/edit" component={StreamEdit} />
