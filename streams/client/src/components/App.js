@@ -12,11 +12,13 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
-        <Route path="/" exact component={StreamList} />
-        <Route path="/streams/new" component={StreamCreate} />
-        <Route path="/streams/edit" component={StreamEdit} />
-        <Route path="/streams/delete" component={StreamDelete} />
-        <Route path="/streams/show" component={StreamShow} />
+        <div className="ui container">
+          <Route path="/" exact component={StreamList} />
+          <Route path="/streams/new" component={StreamCreate} />
+          <Route path="/streams/edit" component={StreamEdit} />
+          <Route path="/streams/delete" component={StreamDelete} />
+          <Route path="/streams/show" component={StreamShow} />
+        </div>
       </BrowserRouter>
     </div>
   );
